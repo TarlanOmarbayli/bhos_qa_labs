@@ -7,3 +7,6 @@ For more info about me, try social engineering.
 
 ##### Repository
 This repository was created for the labs of QA courses.
+
+###### Status Badge for Workflow Runs
+![](https://github.com/TarlanOmarbayli/bhos-qa-labs/actions/workflows/gradle.yml/badge.svg?branch=feature/lab1)
