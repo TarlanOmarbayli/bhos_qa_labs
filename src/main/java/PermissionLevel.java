@@ -1,4 +1,4 @@
-public class PermissionLevel {
+public enum PermissionLevel {
     ADMIN,
     DEVELOPER,
     USER
