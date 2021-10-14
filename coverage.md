@@ -1,3 +1,5 @@
+# What I learned about code coverage?
+
 ### What is a code coverage?
 Code coverage is a measure which describes the degree of which the source code of the program has been tested. It is one form of white box testing which finds the areas of the program not exercised by a set of test cases. It also creates some test cases to increase coverage and determining a quantitative measure of code coverage.
 
@@ -5,14 +7,13 @@ In most cases, code coverage system gathers information about the running progra
 
 ### Code Coverage Methods
 Following are major code coverage methods:
-
 * Statement Coverage
 * Decision Coverage
 * Branch Coverage
 * Toggle Coverage
 * FSM Coverage
 
-We will have a look at the branch coverage.
+Let's have a look at the branch coverage.
 
 ### Branch Coverage
 Branch Coverage is a white box testing method in which every outcome from a code module(statement or loop) is tested. The purpose of branch coverage is to ensure that each decision condition from every branch is executed at least once. It helps to measure fractions of independent code segments and to find out sections having no branches.
