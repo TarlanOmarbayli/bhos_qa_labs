@@ -14,7 +14,7 @@ public class ClassroomTester {
     }
     @Test
     public void test2(){
-        assertEquals(240, infosec.getMinimumTotalCredits());
+        assertEquals(1920, infosec.getMinimumTotalCredits());
     }
     @Test
     public void test3(){
