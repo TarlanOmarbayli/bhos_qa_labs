@@ -24,27 +24,6 @@ The formula to calculate Branch Coverage:
 
 ![Formula](https://cdn.guru99.com/images/1/102518_1122_CodeCoverag13.jpg)
 
-### Example of Branch Coverage
-To learn branch coverage, let’s consider the example given below.
-
-Consider the following code:
-
-```
-Demo(int a) {                       
-     If (a> 5)
-    	a=a*3
-     Print (a)
-    }    
-```
-
-![Example](https://cdn.guru99.com/images/1/102518_1122_CodeCoverag10.png)
-
-Branch Coverage will consider unconditional branch as well.
-
-| Test Case | Value of A | Output | Branch Coverage |
-| :---: | :---: | :---: | :---: | 
-| 1 | 2 | 2 | 33% |
-| 2 | 6 | 38 | 67% | 
 
 ### Advantages of Branch coverage:
 
