@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class ClassroomTester {
+public class ClassroomTest {
     Classroom infosec = new Classroom(2018,"Infosec",25,24,240,"Khayyam Masiyev");
 
     @Test

@@ -47,18 +47,5 @@ public class Classroom {
     }
 
     public static void main(String[] args){
-        Classroom infosec = new Classroom(2018,"InfoSec",25,24,240,"Khayyam Masiyev");
-//        System.out.println(infosec.getEntryYear());
-//        System.out.println(infosec.getNameOfClassroom());
-//        System.out.println(infosec.getIdOfClass());
-//        System.out.println(infosec.getGraduationYear());
-//        System.out.println(infosec.getMinimumCreditsPerSemester());
-//        System.out.println(infosec.getMinimumTotalCredits());
-//        System.out.println(infosec.getTotalNumberOfStudents());
-//        System.out.println(infosec.getTotalNumberOfCourses());
-//        System.out.println(infosec.getNameOfCurator());
-
     }
-
-
 }
