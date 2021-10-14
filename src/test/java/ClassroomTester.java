@@ -10,7 +10,7 @@ public class ClassroomTester {
 
     @Test
     public void test1(){
-        assertEquals(2018, infosec.getEntry_year());
+        assertEquals(2018, infosec.getEntryYear());
     }
     @Test
     public void test2(){
@@ -18,7 +18,7 @@ public class ClassroomTester {
     }
     @Test
     public void test3(){
-        assertEquals(25, infosec.getTotal_number_of_students());
+        assertEquals(25, infosec.getTotalNumberOfStudents());
     }
     @Test
     public void test4(){
@@ -26,7 +26,7 @@ public class ClassroomTester {
     }
     @Test
     public void test5(){
-        assertEquals("Khayyam Masiyev", infosec.getName_of_curator());
+        assertEquals("Khayyam Masiyev", infosec.getNameOfCurator());
     }
 
 
