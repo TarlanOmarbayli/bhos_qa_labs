@@ -9,18 +9,6 @@ sonarqube {
     property "sonar.projectKey", "TarlanOmarbayli_bhos_qa_labs"
     property "sonar.organization", "tarlanomarbayli"
     property "sonar.host.url", "https://sonarcloud.io"
-
-
-    property "sonar.coverage.jacoco.xmlReportPaths", "$buildDir/reports/jacoco/test/jacocoTestReport.xml"
-    property "sonar.junit.reportPaths", "$buildDir/test-results/test/"
-    property "sonar.exclusions", "**/xmldefs/**,**/spec/api.json"
-    property "sonar.cpd.exclusions", ", **/persistence/entity/**"
-    property "sonar.dynamicAnalysis", "reuseReports"
-    property "sonar.clover.reportPaths", "**/build/clover/clover.xml"
-    property "sonar.java.coveragePlugin", "clover"
-    property "sonar.sources", "src/main/kotlin"
-    property "sonar.tests", "."
-    property "sonar.test.inclusions", "**/*Test*/**"
   }
 }
 
