@@ -1,5 +1,7 @@
 package my_classroom;
 
+//for vulnerable code
+import java.io.IOException;
 
 
 public class Classroom {
@@ -46,4 +48,10 @@ public class Classroom {
         return this.minimumCreditsPerSemester * 8;
     }
 
+    //    Vulnerable code
+    public void runUnsafe() throws IOException {
+        Runtime.getRuntime().exec("classroom.exe");
+    }
+
 }
+
