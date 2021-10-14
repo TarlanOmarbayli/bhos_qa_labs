@@ -46,6 +46,4 @@ public class Classroom {
         return this.minimumCreditsPerSemester * 8;
     }
 
-    public static void main(String[] args){
-    }
 }
