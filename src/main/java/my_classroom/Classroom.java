@@ -16,7 +16,7 @@ public class Classroom {
        this.name_of_curator = name_of_curator;
     }
     public String getIdOfClass(){
-        return this.name_of_classroom + this.entry_year;
+        return this.name_of_classroom + Integer.toString(this.entry_year);
     }
     public int getEntry_year(){
         return this.entry_year;
