@@ -12,7 +12,6 @@ sonarqube {
         property "sonar.projectKey", "TarlanOmarbayli_bhos_qa_labs"
         property "sonar.organization", "tarlanomarbayli"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.sources", "src"
     }
 }
 
