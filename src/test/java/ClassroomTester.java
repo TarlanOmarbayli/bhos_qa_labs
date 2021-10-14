@@ -18,7 +18,7 @@ public class ClassroomTester {
     }
     @Test
     public void test3(){
-        assertEquals("Infosec 2018", infosec.getName_of_classroom());
+        assertEquals("Infosec-2018", infosec.getName_of_classroom());
     }
     @Test
     public void test4(){
