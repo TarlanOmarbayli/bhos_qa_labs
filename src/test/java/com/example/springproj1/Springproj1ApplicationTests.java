@@ -9,9 +9,21 @@ import org.junit.jupiter.api.DisplayName;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.json.*;
 
 @SpringBootTest
 class Springproj1ApplicationTests {
+
+	public boolean isJSON(String response) {
+		try { new JSONObject(response); }
+		catch (JSONException e) {
+			try { new JSONArray(response); }
+			catch (JSONException ex) {
+				return false;
+			}
+		}
+		return true;
+	}
 
 	public void integrationTest(String url) {
 		RestTemplate restTemplate = new RestTemplate();
@@ -19,6 +31,7 @@ class Springproj1ApplicationTests {
 		assertEquals(MediaType.APPLICATION_JSON, response.getHeaders().getContentType());
 		assertNotNull(response);
 		assertTrue(response.getStatusCode() == HttpStatus.OK);
+		assertTrue(isJSON(response.getBody()));
 	}
 
 	@DisplayName("First endpoint test")
