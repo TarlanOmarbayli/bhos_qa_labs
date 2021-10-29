@@ -19,10 +19,9 @@ jobs:
           java-version: '16'
           distribution: 'adopt'
           cache: gradle
-      - name: firebase.json private key
+      - name: serviceAccount.json key
         env:
           FIREBASE_SECRET: ${{ secrets.FIREBASE_SECRET }}
-        run: echo $FIREBASE_SECRET > serviceAccount.json
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Validate Gradle wrapper
