@@ -1,8 +1,8 @@
 package com.project.springproj3;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import java.util.concurrent.ExecutionException;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestServ {
 
@@ -12,10 +12,10 @@ public class TestServ {
         CourseServ.addCourse(new_course);
         Course course_get = CourseServ.readCourse("DBMS");
 
-        assert course_get != null;
-        Assert.assertTrue(new_course.name==course_get.name
-                && new_course.tutor==course_get.tutor
-                && new_course.credits==course_get.credits);
+        assertEquals(new_course.name, course_get.name);
+        assertEquals(new_course.tutor, course_get.tutor);
+        assertEquals(new_course.credits, course_get.credits);
+
     }
 
 }
