@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutionException;
 public class CourseServ {
     public static String addCourse(Course course) throws ExecutionException, InterruptedException {
         Firestore db = FirestoreClient.getFirestore();
-        ApiFuture<WriteResult> collectionApiFuture = db.collection("courses").document(course.name + "" + course.tutor).set(course);
+        ApiFuture<WriteResult> collectionApiFuture = db.collection("courses").document(course.name).set(course);
         return collectionApiFuture.get().getUpdateTime().toString();
     }
 
