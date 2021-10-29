@@ -18,7 +18,7 @@ public class FirebaseInitializer {
     @PostConstruct
     public void initialize() throws IOException {
         try {
-            FileInputStream serviceAccount = new FileInputStream("serviceAccountKey.json");
+            InputStream serviceAccount = new FileInputStream("serviceAccountKey.json");
             GoogleCredentials credentials = GoogleCredentials.fromStream(serviceAccount);
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(credentials)
@@ -27,7 +27,7 @@ public class FirebaseInitializer {
 
 //            Firestore db = FirestoreClient.getFirestore();
 
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

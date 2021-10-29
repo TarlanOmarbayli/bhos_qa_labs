@@ -1,10 +1,17 @@
 package com.project.springproj3;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.context.web.WebAppConfiguration;
 import java.util.concurrent.ExecutionException;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestServ {
+@SpringBootTest
+@ExtendWith(SpringExtension.class)
+@WebAppConfiguration
+class UserServTests {
 
     @Test
     public void testInsertion() throws ExecutionException, InterruptedException {

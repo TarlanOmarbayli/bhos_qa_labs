@@ -18,9 +18,9 @@ public class CourseServ {
         return collectionApiFuture.get().getUpdateTime().toString();
     }
 
-    public static Course readCourse(String name) throws ExecutionException, InterruptedException {
+    public static Course readCourse(String id) throws ExecutionException, InterruptedException {
         Firestore db = FirestoreClient.getFirestore();
-        DocumentReference documentReference = db.collection("courses").document(course);
+        DocumentReference documentReference = db.collection("courses").document(id);
 
         ApiFuture<DocumentSnapshot> future = documentReference.get();
         DocumentSnapshot document = future.get();
