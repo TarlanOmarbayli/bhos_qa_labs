@@ -20,18 +20,18 @@ public class IntegrationTest {
     TestRestTemplate restTemplate = new TestRestTemplate();
     HttpHeaders headers = new HttpHeaders();
 
-    String api_key = "";
-    FileReader fr;
-    {
-        try {
-            fr = new FileReader("nytimes_apikey.txt");
-            int i;
-            while ((i = fr.read()) != -1)
-                api_key += (char)i;
-        } catch (IOException e) { e.printStackTrace();}
-    }
+//    String api_key = "";
+//    FileReader fr;
+//    {
+//        try {
+//            fr = new FileReader("nytimes_apikey.txt");
+//            int i;
+//            while ((i = fr.read()) != -1)
+//                api_key += (char)i;
+//        } catch (IOException e) { e.printStackTrace();}
+//    }
 
-    public String api_url = "https://api.nytimes.com/svc/books/v3/lists.json?list=combined-print-and-e-book-nonfiction&api-key=" + api_key;
+    public String api_url = "https://api.nytimes.com/svc/books/v3/lists.json?list=combined-print-and-e-book-nonfiction&api-key=BpLowO3kAtHhf0gRmBG6nGcHEzGjMdw1";
 
     @Test
     public void apiTest() throws JSONException {
