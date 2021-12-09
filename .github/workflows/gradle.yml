@@ -19,7 +19,7 @@ jobs:
           cache: gradle
       - name: api key
         env:
-          NYTIMES_APIKEY: ${{ secrets.FIREBASE_WEB_API_KEY }}
+          FIREBASE_APIKEY: ${{ secrets.FIREBASE_WEB_API_KEY }}
         run: echo $FIREBASE_WEB_API_KEY > firebase_web_api_key.txt
       - name: Firebase secret
         env:
